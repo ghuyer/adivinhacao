@@ -20,7 +20,7 @@ function guess() {
   let userChoice = document.querySelector("input").value;
   userChoice = Number(userChoice);
 
-  if (userChoice == "" || userChoice < 0 || userChoice > 10) {
+  if (userChoice == "" || userChoice > 10) {
     alert("Você precisa escolher um número entre 0 e 10.");
     document.querySelector("input").value = "";
     document.querySelector("input").focus();
