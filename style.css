@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 2s;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-size: 1.6rem;
+  --font-family-head: 'Montserrat';
+  --font-family-text: 'DM Sans';
+}
+
+body {
+  font-size: var(--font-size);
+  background: linear-gradient(107.56deg, #00DDFB 0%, #00709F 100%);
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4.8rem 6.4rem;
+  margin: 20rem auto;
+  max-width: 42.8rem;
+  height: 27rem;
+
+  font-family: var(--font-family-text);
+  background: hsla(0, 0%, 100%, 1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+h1 {
+  font-family: var(--font-family-head);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: hsla(240, 27%, 28%, 1);
+
+  margin-bottom: 1.6rem;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 150%;
+
+  margin-bottom: 3.3rem;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: hsla(238, 27%, 28%, 0.8);
+
+}
+
+h3 {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: hsla(238, 27%, 28%, 0.8);
+
+  margin: 1rem;
+
+  opacity: 0;
+}
+
+.button {
+  width: 125px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: hsla(238, 27%, 28%, 1);
+  background: hsla(212, 23%, 89%, 1);
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.2rem;
+
+  width: 4.3rem;
+}
+
+button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: hsla(0, 0%, 100%, 1);
+  background: hsla(240, 81%, 71%, 1);
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: rgb(222, 222, 222);
+  background: rgb(93, 93, 214);
+}
+
+.button button {
+  width: 8.2rem;
+  border-radius: 0px 4px 4px 0px;
+}
+
+#attempts {
+  margin: 0;
+  padding-top: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: hsla(12, 100%, 54%, 0.8);
+
+  opacity: 0;
+}
+
+#result {
+  margin-top: 22rem;
+  max-height: 23.4rem;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 64.2rem;
+  box-shadow: none;
+  display: none;
+}
+
+#result button {
+  border-radius: 4px;
+}
