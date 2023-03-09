@@ -1,4 +1,4 @@
-const secretNumber = Math.round(Math.random() * 10);
+const secretNumber = Math.ceil(Math.random() * 10);
 
 let numberOfAttempts = 1;
 
@@ -21,7 +21,7 @@ function guess() {
   userChoice = Number(userChoice);
 
   if (userChoice == "" || userChoice > 10) {
-    alert("Você precisa escolher um número entre 0 e 10.");
+    alert("Você precisa escolher um número entre 1 e 10.");
     document.querySelector("input").value = "";
     document.querySelector("input").focus();
   } else if (userChoice == secretNumber) {
